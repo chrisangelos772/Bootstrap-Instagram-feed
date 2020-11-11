@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram feed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/260f92cd59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+  <!-- Image and text -->  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="#"> <i class="fab fa-instagram"> </i> Instagram </a> 
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                   
+                   <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal" type="button">Create a New Post</button>
+
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" href="#">Log Out</button>
+                        </div>
+                    </div>
+                </form>
+
+        </div>
+    </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"> 
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-camera"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-map-marker-alt"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- Centered Pills -->
+    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
+        </li>
+    </ul>
+<br>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/123649422_1751578175018469_582391556857355398_o.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=XcBQAsgljREAX-UNclO&_nc_ht=scontent.fmia1-1.fna&oh=ad02e2110ed165aee49d36b15bdd012b&oe=5FD15D01" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/123705281_1751578315018455_2760345833289917610_o.jpg?_nc_cat=107&ccb=2&_nc_sid=730e14&_nc_ohc=A6k3stC7E9wAX-BhT0X&_nc_ht=scontent.fmia1-1.fna&oh=880136c8da7dab085e9a44a31b31f095&oe=5FD1E52A" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/123704569_1751577805018506_6947171111897069627_o.jpg?_nc_cat=107&ccb=2&_nc_sid=730e14&_nc_ohc=2ABNKcDJFh4AX9yXSZ_&_nc_ht=scontent.fmia1-1.fna&oh=0d954c59f753ba7463946f1127eb0583&oe=5FD05FF8" class="h-100 w-100" alt="...">
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/123710501_1751577731685180_5726746225276457355_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=xysvglbFwTAAX9LxjaG&_nc_ht=scontent.fmia1-2.fna&oh=b7489b3a0d84b33a1faa306e549c3fa4&oe=5FCFA89D" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/123735606_1751578025018484_9142713154227890452_o.jpg?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=463pgnELXLAAX_8MjiV&_nc_ht=scontent.fmia1-2.fna&oh=220b6291a3fa8cd59b68c1f918c44a40&oe=5FD0A81E" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/123772444_1751577748351845_159840480829754216_o.jpg?_nc_cat=107&ccb=2&_nc_sid=730e14&_nc_ohc=aJ5C-bOyihAAX8b0OA9&_nc_ht=scontent.fmia1-1.fna&oh=538016802d0fe72e389c27638f078a60&oe=5FCFD4BB" class="h-100 w-100" alt="...">
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/124714262_1757396131103340_1718106134463719043_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=O-t-yfIyIm8AX-CFLcD&_nc_ht=scontent.fmia1-2.fna&oh=e9cd9c5487cb94a4f86412164f0b76ab&oe=5FD186AF" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/123145866_1745890462253907_5326371578465339960_o.jpg?_nc_cat=102&ccb=2&_nc_sid=8bfeb9&_nc_ohc=-QWzeHhYQTQAX94DDeK&_nc_ht=scontent.fmia1-1.fna&oh=c6b647835209d9aa6e4663d5dd16e1ad&oe=5FD0D631" class="h-100 w-100" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/120292882_1715264825316471_7392490415340758313_o.jpg?_nc_cat=109&ccb=2&_nc_sid=730e14&_nc_ohc=DccA7uVgHGIAX9ya6nV&_nc_ht=scontent.fmia1-2.fna&oh=6ea3e1e1d1a560e1ac28993401f9c59c&oe=5FD17BD8" class="h-100 w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        
+        
+        
+        </div>
+    </div>
+
+
+        
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>
